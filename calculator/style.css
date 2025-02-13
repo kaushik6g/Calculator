@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.operator {
+    background-color: #f8a52a;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #d08f1a;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.decimal {
+    background-color: #333;
+    color: #fff;
+}
+
+.all-clear {
+    background-color: #d62300;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #b21e00;
+}
+
+.equal-sign1 {
+    background-color: #4caf50;
+    color: #ffffff;
+    height: calc(100% - 130px);
+    grid-area: span 2;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
